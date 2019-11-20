@@ -1,6 +1,6 @@
-if [ $(docker container ls -q --filter name="server_container") != '' ];then
- docker container stop server_container
- docker container rm server_container
+if [ $(docker container ls -q --filter name="server_container45") != '' ];then
+ docker container stop server_container45
+ docker container rm server_container45
  fi;
 
  if [ $(docker image ls -q --filter reference="server") != '' ];then
@@ -11,4 +11,4 @@ if [ $(docker container ls -q --filter name="server_container") != '' ];then
 docker image build -t server .
 
 
-docker container run -itd -p4001:4000 --name server_container server
+docker container run -itd -p4001:4000 --name server_container45 server
